@@ -1,6 +1,8 @@
 module Api
     module V1
         class NewsController < ApplicationController
+            protect_from_forgery with: :null_session
+
             def index
                 news = News.all
                 
