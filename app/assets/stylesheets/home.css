@@ -1,0 +1,275 @@
+body {
+    background-image: url(./../images/background-chile-aoe.png);
+    background-repeat: repeat;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    min-height: 100%;
+    position: relative;
+  }
+
+  /* code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+   */
+  /* ---------------------------------------------------------------*/
+
+  /*Header*/
+.header {
+    background-image: url(./../images/header-desktop-chileaoe.png);
+    width: 100%;
+    height: 20em;
+    background-size: cover;
+    background-position: left;
+  }
+  
+  .login-button {
+    margin-top: 1em;
+  }
+  
+  
+  /*NavBar*/
+  .navfull {
+    background: radial-gradient(#ffb733, #e69500);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .link-navbar {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #ffffff !important;
+    font-size: 1.1rem;
+    margin :0rem 1rem 0rem 1rem;
+    text-shadow: 0 0.1rem 0.1rem rgba(0,0,0,0.30);
+  } 
+  
+  
+  /*Footer */
+  
+  .footer-big{
+    background: repeating-linear-gradient(
+      45deg,
+      #222,
+      #222 0.3rem,
+      #000 0.3rem,
+      #000 0.6rem
+    );
+    position: absolute;
+    width: 100%;
+    bottom: 56px;
+  }
+    
+  .footer-small{
+    background-color: black;
+    color: #aaa;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+    
+  .footer-small a{
+    color: #ccc;
+  }
+    
+  .vl {
+    border-left:  #E7A70F solid thin; 
+    height: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+  }
+  
+  .list-unstyled a{
+    color: white;
+  }
+    
+  .fa-facebook-square, .fa-twitch {
+    font-size: 2rem;
+  }
+  
+  .frame-body {
+    margin-bottom: 200px;
+  }
+  
+  /* home cards*/
+  .home-cards{
+    color: #CCCCCC;
+    background-color: black !important;
+    border-width: thin;
+    box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+    box-sizing: border-box;
+    width: 80%;
+    
+  }
+  
+  .home-card-headers{
+    background-color: #000 !important;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    text-align: center;
+    border-bottom:  #E7A70F solid thin !important; 
+    font-size: 1.7rem;
+  }
+  
+  .home-card-bodies{
+    background: repeating-linear-gradient(
+      45deg,
+      #222,
+      #222 0.3rem,
+      #000 0.3rem,
+      #000 0.6rem
+    );
+    box-sizing: border-box;
+    border-radius: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 0.3rem;
+    align-items: center;
+    width: 100%;
+  }
+  
+  
+  
+  /*twitch*/
+  .image-twitch-index {
+    border: orange solid;
+    border-width: thin;
+    box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 260px;
+    max-height: 150px;
+  }
+  
+  .row-image-twitch {
+    position: relative;
+  }
+  
+  .twitch-name-profile {
+    position: absolute;
+    border-radius: 3px; 
+    background-color: #3D4148; 
+    padding: 3px 6px; 
+    border: medium solid #111; 
+    color: #E7A70F; 
+    font-size: 1.1rem;
+    top: 0.5rem;
+  }
+  
+  .twitch-name-profile h5 {
+    margin-bottom: 0;
+  }
+  
+   .fa-twitch {
+     font-size: 1.3rem;
+     padding-right: 0.1rem;
+   }
+  
+   .twitch-card-body{
+    background: repeating-linear-gradient(
+      45deg,
+      #222,
+      #222 0.3rem,
+      #000 0.3rem,
+      #000 0.6rem
+    );
+    box-sizing: border-box;
+    border-radius: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 0.3rem;
+    width: 100%;
+  }
+  .twitch-card-video {
+    box-sizing: border-box;
+    box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+    border-top: thin solid orange;
+    border-bottom: thin solid orange;
+  }
+  
+  /*clans*/
+  
+  .home-card-clans-body{
+    background: repeating-linear-gradient(
+      45deg,
+      #222,
+      #222 0.3rem,
+      #000 0.3rem,
+      #000 0.6rem
+    );
+    box-sizing: border-box;
+    border-radius: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 0.3rem;
+    padding-left: 4rem;
+    width: 100%;
+  }
+  
+  .fa-fist-raised {
+    font-size: 1.3rem;
+    padding-right: 0.1rem;
+  }
+  
+  .image-clans-home {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+  }
+  
+  .name-clans-home {
+    text-decoration: none;
+    color: #ccc;
+    padding-left: 1rem;
+  }
+  
+  .dot {
+    height: 0.5em;
+    width: 0.5em;
+    background-color:red;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  /* home news */
+  .news-card {
+    box-sizing: border-box;
+    box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+    border: thin solid orange !important;
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  
+  .news-card-body{
+    background-color:#111 !important;
+    color: #bbb;
+    box-sizing: border-box;
+    padding: 1rem 3rem 2rem 3rem;
+    text-align: center;
+    border-radius: 0rem;
+  }
+  
+  .news-title {
+    font-weight: 600 !important;
+    font-size: 1.8rem !important;
+    text-align: center;
+    color: #ccc;
+    padding: 0.3rem 1rem 0.5rem 1rem;
+  }
+  .hr-news-cards {
+    margin: 0rem 0rem 0.5rem 0rem;
+    border: 1px solid #444444;
+  }
+  
+  .news-card-img {
+   max-width: 90%;
+   margin: 2rem 0rem;
+  }
+
+  .header-news{
+    background-image: url(./../images/news.png);
+  }
