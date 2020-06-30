@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactCountryFlag from "react-country-flag"
 import { Row, Container, Col } from 'react-bootstrap';
-import './../../../../assets/stylesheets/ranking.css';
+// import './styles.css'
 
 
 class PlayerName extends Component {
@@ -20,7 +20,7 @@ class PlayerName extends Component {
         return (
             <div>
                 <Container fluid>
-                    <Row clasnName="align-middle">
+                    <Row className="align-middle">
                         <Col sm={12} className="streak-padding-off">
                             { this.props.country === "CL" ? "" :
                                 <span className="mr-1">

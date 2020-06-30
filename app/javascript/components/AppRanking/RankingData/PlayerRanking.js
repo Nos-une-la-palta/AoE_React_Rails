@@ -14,7 +14,7 @@ class PlayerRanking extends Component {
         return (
             <div>
                 <Container fluid>
-                    <Row clasnName="align-middle">
+                    <Row className="align-middle">
                         <Col sm={5} className="streak-padding-off player-ranking-style-data">
                             Racha: 
                             <i className={"arrow " + (streak >= 0 ? "up" : "down")}></i>

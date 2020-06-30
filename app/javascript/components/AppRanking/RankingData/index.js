@@ -10,9 +10,9 @@ const RankingData = ({ players }) => {
     return (
         <div className="container-fluid">
                 { players && players.slice(0, 10).map( (player, index) => 
-                    <div>
+                    <div key={player.steam_id}>
                         <Row className="mb-2 mt-2 mx-auto py-auto"
-                            key={player.steam_id}>
+                            >
 
                             <Col sm={{span:2, offset:1 }} className="main-number-rank-bg ">
                                 <span className="main-number-rank">
