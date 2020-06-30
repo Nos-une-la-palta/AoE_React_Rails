@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactCountryFlag from "react-country-flag"
 import { Row, Container, Col } from 'react-bootstrap';
-// import './styles.css'
+import './../../../../assets/stylesheets/ranking.css';
 
 
 class PlayerName extends Component {
