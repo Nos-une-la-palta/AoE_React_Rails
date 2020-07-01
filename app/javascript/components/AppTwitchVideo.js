@@ -6,13 +6,13 @@ class AppTwitchVideo extends Component {
         return (
             <div>
                 <iframe
-                    src="https://player.twitch.tv/?channel=loltyler1&parent=localhost"
+                    src="https://player.twitch.tv/?channel=lck_korea&parent=localhost"
                     height="500"
-                    width="900"
+                    width="1080"
                     scrolling="no"
                     frameborder="0"
                     allowFullScreen="true"
-                    title="hanryang1125" 
+                    title="lck_korea" 
                     className="twitch-card-video">
                 </iframe>
             </div>

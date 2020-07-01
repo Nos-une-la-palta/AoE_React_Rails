@@ -11,19 +11,16 @@ class TwitchContainer extends Component {
             <div>
                 <AppFrame body={
                     <Container fluid>
-                        <Row className="mt-5 mx-auto">
-                            <Col sm={{span:5, offset:2}}>
+                        <Row className="mt-5">
+                            <Col sm={{span:7, offset:2}}>
                                 <AppTwitchVideo/>
                             </Col>
-                            <Col sm={{span:3, offset:1}}>
+                            <Col sm={{span:3}}>
                                 <AppTwitchUsersList/>
                             </Col>
                         </Row>
-
                     </Container>
                 }/>
-
-            
             </div>
         );
     }
