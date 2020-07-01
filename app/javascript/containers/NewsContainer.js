@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import AppFrame from '../components/AppFrame';
-import { withRouter } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import AppNews from '../components/AppNews';
 
@@ -27,4 +26,4 @@ NewsContainer.propTypes = {
 
 };
 
-export default withRouter(NewsContainer);
+export default NewsContainer;

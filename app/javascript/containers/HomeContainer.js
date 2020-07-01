@@ -3,7 +3,7 @@ import AppFrame from '../components/AppFrame';
 import { Container, Row, Col } from 'react-bootstrap';
 import AppTwitch from '../components/AppTwitch';
 import AppClans from '../components/AppClans';
-import AppNews from './../components/AppNews';
+import AppNews from '../components/AppNews';
 import AppRanking from '../components/AppRanking';
 import './../../assets/stylesheets/home.css';
 
