@@ -1,10 +1,48 @@
+// import React, { Component } from 'react';
+// import PropTypes from 'prop-types';
+// import {Card } from "react-bootstrap";
+// import AppTwitchUser from './AppTwitchUser';
+
+// class AppTwitchUsersList extends Component {
+//     render() {
+//         return (
+            // <div>
+            //      <Card className="home-cards">
+            //         <Card.Header className="home-card-headers">
+            //         <i className="fas fa-headset"></i> Streamers
+            //         </Card.Header>
+            //         <Card className="twitch-card-body">
+            //           <AppTwitchUser/>
+            //         </Card>
+            //     </Card>
+                
+            // </div>
+//         );
+//     }
+// }
+
+// AppTwitchUsersList.propTypes = {
+
+// };
+
+// export default AppTwitchUsersList;
+
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import {Card } from "react-bootstrap";
+import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { fetchTwitches } from './../../actions/fetchTwitches';
+import { getTwitches } from './../../selectors/twitches';
+import { Card } from "react-bootstrap";
 import AppTwitchUser from './AppTwitchUser';
+import './../../../assets/stylesheets/home.css';
 
 class AppTwitchUsersList extends Component {
-    render() {
+
+    componentDidMount() {
+        this.props.fetchTwitches();
+    }
+
+    renderBody = (twitches) => {
         return (
             <div>
                  <Card className="home-cards">
@@ -12,19 +50,26 @@ class AppTwitchUsersList extends Component {
                     <i className="fas fa-headset"></i> Streamers
                     </Card.Header>
                     <Card className="twitch-card-body">
-                      <AppTwitchUser/>
-                      <AppTwitchUser/>
-                      <AppTwitchUser/>
+                      <AppTwitchUser twitches={twitches}/>
                     </Card>
                 </Card>
-                
+            </div>
+        )
+    };
+    
+  
+    render() {
+        return (
+            <div>
+                {this.renderBody(this.props.twitches)}
             </div>
         );
     }
+
 }
 
-AppTwitchUsersList.propTypes = {
+const mapStateToProps = state => ({
+    twitches: getTwitches(state)
+  });
 
-};
-
-export default AppTwitchUsersList;
+export default withRouter(connect(mapStateToProps, { fetchTwitches })(AppTwitchUsersList))

@@ -1,34 +1,3 @@
-// import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
-// import { Card } from 'react-bootstrap';
-// import './../../../assets/stylesheets/home.css';
-
-// class AppNews extends Component {
-//     render() {
-//         return (
-            // <div className="d-flex justify-content-center">
-            //     <Card className="news-card">
-            //         <Card.Img variant="top" className="header-news" />
-            //         <Card.Body className="news-card-body">
-            //             <Card.Title className="news-title">Torneo Galáctico</Card.Title>
-            //             <hr className="hr-news-cards"/>
-            //             <Card.Img className="news-card-img" variant="top" src={require('./../../../assets/images/torneto.jpg')} />
-            //             <Card.Text>
-            //             Some quick example text to build on the card title and make up the bulk of the card's content.
-            //             </Card.Text>
-            //             <hr className="hr-news-cards"/>
-            //         </Card.Body>
-            //     </Card>
-            // </div>
-//         );
-//     }
-// }
-
-// AppNews.propTypes = {
-
-// };
-
-// export default AppNews;
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -46,7 +15,7 @@ class AppNews extends Component {
         return (
             <div>
                 { news.map( news => 
-                    <div className="d-flex justify-content-center">
+                    <div className="d-flex justify-content-center" key={news.id}>
                         <Card className="news-card">
                             <Card.Img variant="top" className="header-news" />
                             <Card.Body className="news-card-body">
@@ -60,8 +29,7 @@ class AppNews extends Component {
                         </Card>
                     </div>
                     )
-                
-            }
+                 }
             </div>
         )
     }

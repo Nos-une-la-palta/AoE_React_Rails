@@ -4,6 +4,7 @@ import AppFrame from '../components/AppFrame';
 import { Container, Row, Col } from 'react-bootstrap';
 import AppTwitchVideo from '../components/AppTwitchVideo';
 import AppTwitchUsersList from '../components/AppTwitchUsersList';
+import AppTwitch from '../components/AppTwitch';
 
 class TwitchContainer extends Component {
     render() {
