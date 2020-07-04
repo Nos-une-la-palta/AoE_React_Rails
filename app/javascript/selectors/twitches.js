@@ -1,0 +1,1 @@
+export const getTwitches = state => state.twitches;
