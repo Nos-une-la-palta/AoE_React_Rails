@@ -10,8 +10,8 @@ class AppTwitchVideo extends Component {
                     height="500"
                     width="1080"
                     scrolling="no"
-                    frameborder="0"
-                    allowFullScreen="true"
+                    frameBorder="0"
+                    allowFullScreen={true}
                     title="lck_korea" 
                     className="twitch-card-video">
                 </iframe>

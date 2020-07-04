@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import { Row, Container, Col } from 'react-bootstrap';
 import './../../../../assets/stylesheets/ranking.css';
+import ww from './../../../../assets/images/ww.png';
+import mundial from './../../../../assets/images/mundial.svg';
 
 
 class PlayerRanking extends Component {
 
     renderWorldRanking = ({rank})  => (
-        <span>Ranking: {rank}  </span>
+        <div>
+            <img src={mundial} className="ww-rank-logo"/> <span>Rank: {rank}  </span>
+        </div>
     );
   
     render() {

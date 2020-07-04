@@ -134,7 +134,10 @@ body {
     width: 100%;
   }
   
-  
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
   
   /*twitch*/
   .image-twitch-index {
@@ -149,6 +152,10 @@ body {
   
   .row-image-twitch {
     position: relative;
+  }
+
+  .row-image-twitch:hover {
+    background-color: grey;
   }
   
   .twitch-name-profile {
@@ -227,10 +234,18 @@ body {
     padding-left: 1rem;
   }
   
-  .dot {
+  .red-dot {
     height: 0.5em;
     width: 0.5em;
     background-color:red;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .green-dot {
+    height: 0.5em;
+    width: 0.5em;
+    background-color:greenyellow;
     border-radius: 50%;
     display: inline-block;
   }

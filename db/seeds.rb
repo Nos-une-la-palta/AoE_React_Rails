@@ -65,3 +65,15 @@
 #     twitch_img: "https://i.ibb.co/jhzN35n/Inicio.png"
 #   },
 # ])
+
+# Twitch.create([
+#     {
+#         streamer: "cohhcarnage"
+#     },
+#     {
+#         streamer: "mendo"
+#     },
+#     {
+#         streamer: "gorgc"
+#     },
+# ])

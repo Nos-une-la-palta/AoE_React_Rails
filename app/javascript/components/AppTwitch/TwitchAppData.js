@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {Row, Card } from 'react-bootstrap';
 import './../../../assets/stylesheets/home.css';
 
-
 const TwitchAppData = ({ twitches }) => {
     return (
         <div className="container-fluid">
