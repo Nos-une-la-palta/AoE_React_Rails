@@ -40,10 +40,10 @@ const AppTwitchUser = ({ twitches }) => {
                     streamers.find( s => s.user_name.toLowerCase() === t.attributes.streamer) ?
                         <div key={t.attributes.id}>
                             <a href={`https://www.twitch.tv/${t.attributes.streamer}`}> 
-                            <Row className=" row-image-twitch mb-4 mt-2">
+                            <Row className=" row-image-twitch pb-2 pt-2">
                                 <Col sm={{span:7}}>
                                     
-                                        <img className="image-clans-home " src={t.attributes.twitch_img} /> 
+                                        <img className="image-twitch-user " src={t.attributes.twitch_img} /> 
                                         <span className="name-clans-home">{ st.user_name }</span>
                                    
                                 </Col>
@@ -57,9 +57,9 @@ const AppTwitchUser = ({ twitches }) => {
                     :
                         <div key={t.attributes.id}>
                                     <a href={`https://www.twitch.tv/${t.attributes.streamer}`}> 
-                            <Row className=" row-image-twitch mb-4 mt-2">
+                            <Row className=" row-image-twitch pb-2 pt-2">
                                 <Col sm={{span:7}}>
-                                        <img className="image-clans-home " src={t.attributes.twitch_img} /> 
+                                        <img className="image-twitch-user " src={t.attributes.twitch_img} /> 
                                         <span className="name-clans-home">{ t.attributes.streamer }</span>
                                 </Col>
                                 <Col sm={4} className="my-auto">
