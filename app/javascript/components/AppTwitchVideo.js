@@ -21,7 +21,6 @@ const AppTwitchVideo = () => {
                     title="lck_korea" 
                     className="twitch-card-video">
                 </iframe>
-                {video}
             </div>
         );
 }

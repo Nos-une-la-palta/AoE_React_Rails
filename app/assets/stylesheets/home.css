@@ -155,7 +155,9 @@ body {
   }
 
   .row-image-twitch:hover {
-    background-color: grey;
+    background-color: black !important;
+    border-top: thin solid #E7A70F; 
+    border-bottom: thin solid #E7A70F; 
   }
   
   .twitch-name-profile {
@@ -197,7 +199,21 @@ body {
     box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
     border-top: thin solid orange;
     border-bottom: thin solid orange;
+    width: 100%;
   }
+  .image-twitch-user {
+    border-radius: 100%;
+    width: 3em;
+    height: 3em;
+    border: thin solid black;
+
+  }
+
+  .scroll-box {
+    max-height: 27em !important;
+    overflow-y: scroll;
+  }
+
   
   /*clans*/
   
@@ -240,6 +256,7 @@ body {
     background-color:red;
     border-radius: 50%;
     display: inline-block;
+    margin-right: 0.5em;
   }
 
   .green-dot {
@@ -248,6 +265,7 @@ body {
     background-color:greenyellow;
     border-radius: 50%;
     display: inline-block;
+    margin-right: 0.5em;
   }
   
   /* home news */

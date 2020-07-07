@@ -3,13 +3,18 @@ import { Row, Container, Col } from 'react-bootstrap';
 import './../../../../assets/stylesheets/ranking.css';
 import ww from './../../../../assets/images/ww.png';
 import mundial from './../../../../assets/images/mundial.svg';
+import internet from './../../../../assets/images/internet.svg';
+import earth from './../../../../assets/images/earth.svg';
+import globo from './../../../../assets/images/globo.svg';
+import mundo from './../../../../assets/images/mundo.svg';
+
 
 
 class PlayerRanking extends Component {
 
     renderWorldRanking = ({rank})  => (
-        <div>
-            <img src={mundial} className="ww-rank-logo"/> <span>Rank: {rank}  </span>
+        <div className="align-middle">
+            <img src={mundo} className="ww-rank-logo"/> <span>Rank: {rank}  </span>
         </div>
     );
   
@@ -25,7 +30,7 @@ class PlayerRanking extends Component {
                             <span style={{color: streak >= 0 ? "rgb(31, 239, 52)" : "rgb(255, 35, 43)" }} >{Math.abs(streak)}</span>
                         </Col>
 
-                        <Col sm={6} className="player-ranking-style-data">
+                        <Col sm={6} className="player-ranking-style-data padding-left-off">
                             { this.props.country === "CL" ?
                                 this.renderWorldRanking(this.props) : "" }
                         </Col>

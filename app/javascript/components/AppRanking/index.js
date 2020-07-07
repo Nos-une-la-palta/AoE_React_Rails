@@ -41,7 +41,7 @@ class AppRanking extends Component {
                         width={78}
                         height={23}
                         onstyle="outline-warning"
-                        offstyle="outline-light"
+                        offstyle="outline-primary"
                         className="align-middle"
                     /> 
 

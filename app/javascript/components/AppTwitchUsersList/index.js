@@ -20,7 +20,7 @@ class AppTwitchUsersList extends Component {
                     <Card.Header className="home-card-headers">
                     <i className="fas fa-headset"></i> Streamers
                     </Card.Header>
-                    <Card className="twitch-card-body">
+                    <Card className="twitch-card-body scroll-box">
                       <AppTwitchUser twitches={twitches}/>
                     </Card>
                 </Card>
