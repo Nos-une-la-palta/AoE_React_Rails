@@ -3,9 +3,15 @@ import axios from 'axios';
 import PropTypes from 'prop-types';
 import {Row, Col } from 'react-bootstrap';
 import './../../../assets/stylesheets/home.css';
+import { createGlobalState } from 'react-hooks-global-state';
+
+export const { useGlobalState } = createGlobalState({
+    video: 'nurok'
+  });
 
 const AppTwitchUser = ({ twitches }) => {
     const [streamers, setStreamers] = useState([])
+    const [video, setVideo] = useGlobalState('video')
     // const [loaded, setLoaded] = useState(false)
     
     useEffect(() => {
@@ -15,7 +21,7 @@ const AppTwitchUser = ({ twitches }) => {
         
         const url = `https://api.twitch.tv/helix/streams?user_login=${strinfigy_streamers}`
         console.log(url)
-        
+
         axios.get(url, {
             headers: {
                 'Client-ID': '31fd0rot71kt0kndadcpfhpmxbfvqv',
@@ -24,13 +30,14 @@ const AppTwitchUser = ({ twitches }) => {
             }
         })
         .then( resp => 
-            setStreamers(resp.data.data)
+            setStreamers(resp.data.data),
             //, setLoaded(true)
              )
         .catch( resp => console.log(resp) )
-    }, [])
+        console.log(streamers)
 
-    console.log('streamers:', streamers)
+    }, [])     
+
     
     return (
         <div className="container-fluid">
@@ -38,9 +45,8 @@ const AppTwitchUser = ({ twitches }) => {
                 let st = streamers.find( s => s.user_name.toLowerCase() === t.attributes.streamer)
                 return (
                     streamers.find( s => s.user_name.toLowerCase() === t.attributes.streamer) ?
-                        <div key={t.attributes.id}>
-                            <a href={`https://www.twitch.tv/${t.attributes.streamer}`}> 
-                            <Row className=" row-image-twitch mb-4 mt-2">
+                        <div key={t.id}>
+                            <Row className=" row-image-twitch mb-4 mt-2" onClick={() => setVideo(t.attributes.streamer)}>
                                 <Col sm={{span:7}}>
                                     
                                         <img className="image-clans-home " src={t.attributes.twitch_img} /> 
@@ -52,12 +58,10 @@ const AppTwitchUser = ({ twitches }) => {
                                     { st.user_name.toLowerCase() === t.attributes.streamer ? st.viewer_count: "0"}
                                 </Col>
                             </Row>
-                            </a>
                         </div> 
                     :
-                        <div key={t.attributes.id}>
-                                    <a href={`https://www.twitch.tv/${t.attributes.streamer}`}> 
-                            <Row className=" row-image-twitch mb-4 mt-2">
+                        <div key={t.id}>
+                            <Row className=" row-image-twitch mb-4 mt-2" onClick={() => setVideo(t.attributes.streamer)}>
                                 <Col sm={{span:7}}>
                                         <img className="image-clans-home " src={t.attributes.twitch_img} /> 
                                         <span className="name-clans-home">{ t.attributes.streamer }</span>
@@ -67,7 +71,6 @@ const AppTwitchUser = ({ twitches }) => {
                                     0
                                 </Col>
                             </Row>
-                                    </a>
                         </div>
                 )     
                 })
