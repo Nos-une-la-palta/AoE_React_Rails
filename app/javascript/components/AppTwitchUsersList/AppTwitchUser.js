@@ -40,20 +40,20 @@ const AppTwitchUser = ({ twitches }) => {
 
     
     return (
-        <div className="container-fluid">
+        <div className="container-fluid ">
             {twitches.map( t => {
                 let st = streamers.find( s => s.user_name.toLowerCase() === t.attributes.streamer)
                 return (
                     streamers.find( s => s.user_name.toLowerCase() === t.attributes.streamer) ?
                         <div key={t.id}>
-                            <Row className=" row-image-twitch mb-4 mt-2" onClick={() => setVideo(t.attributes.streamer)}>
-                                <Col sm={{span:7}}>
+                            <Row className=" row-image-twitch pb-2 pt-2" onClick={() => setVideo(t.attributes.streamer)}>
+                                <Col sm={{span:7, offset:1}}>
                                     
                                         <img className="image-twitch-user " src={t.attributes.twitch_img} /> 
                                         <span className="name-clans-home">{ st.user_name }</span>
                                    
                                 </Col>
-                                <Col sm={4} className="my-auto">
+                                <Col sm={3} className="my-auto">
                                     <span className="green-dot"></span> 
                                     { st.user_name.toLowerCase() === t.attributes.streamer ? st.viewer_count: "0"}
                                 </Col>
@@ -61,12 +61,12 @@ const AppTwitchUser = ({ twitches }) => {
                         </div> 
                     :
                         <div key={t.id}>
-                            <Row className=" row-image-twitch mb-4 mt-2" onClick={() => setVideo(t.attributes.streamer)}>
-                                <Col sm={{span:7}}>
+                            <Row className=" row-image-twitch pb-2 pt-2" onClick={() => setVideo(t.attributes.streamer)}>
+                                <Col sm={{span:7, offset:1}}>
                                         <img className="image-twitch-user " src={t.attributes.twitch_img} /> 
                                         <span className="name-clans-home">{ t.attributes.streamer }</span>
                                 </Col>
-                                <Col sm={4} className="my-auto">
+                                <Col sm={3} className="my-auto">
                                     <span className="red-dot"></span> 
                                     0
                                 </Col>

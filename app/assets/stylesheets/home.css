@@ -155,10 +155,15 @@ body {
   }
 
   .row-image-twitch:hover {
-    background-color: black !important;
-    border-top: thin solid #E7A70F; 
-    border-bottom: thin solid #E7A70F; 
+    background-color: black;
+    cursor: pointer;
+    border-top:  #E7A70F 1px solid;
+    border-bottom:  #E7A70F 1px solid;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
   }
+
   
   .twitch-name-profile {
     position: absolute;
@@ -210,10 +215,28 @@ body {
   }
 
   .scroll-box {
-    max-height: 27em !important;
+    max-height: 27em;
     overflow-y: scroll;
   }
 
+  .scroll-box::-webkit-scrollbar {
+    max-width: 0.6em;
+  } 
+
+  .scroll-box::-webkit-scrollbar-track {
+    visibility: hidden;
+  }
+
+  .scroll-box::-webkit-scrollbar-thumb {
+    visibility: hidden;
+  }
+
+  .scroll-box::-webkit-scrollbar-thumb:hover {
+    visibility: visible;
+    background: #333; 
+    border-radius: 1em;
+    
+  }
   
   /*clans*/
   
