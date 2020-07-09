@@ -1,0 +1,10 @@
+/etc/apt/sources.list.d/aplattner-ubuntu-ppa-focal.list:deb http://ppa.launchpad.net/aplattner/ppa/ubuntu focal main
+/etc/apt/sources.list.d/aplattner-ubuntu-ppa-focal.list:# deb-src http://ppa.launchpad.net/aplattner/ppa/ubuntu focal main
+/etc/apt/sources.list.d/graphics-drivers-ubuntu-ppa-focal.list:deb http://ppa.launchpad.net/graphics-drivers/ppa/ubuntu focal main
+/etc/apt/sources.list.d/graphics-drivers-ubuntu-ppa-focal.list:# deb-src http://ppa.launchpad.net/graphics-drivers/ppa/ubuntu focal main
+/etc/apt/sources.list.d/rael-gc-ubuntu-rvm-focal.list:deb http://ppa.launchpad.net/rael-gc/rvm/ubuntu focal main
+/etc/apt/sources.list.d/rael-gc-ubuntu-rvm-focal.list:# deb-src http://ppa.launchpad.net/rael-gc/rvm/ubuntu focal main
+/etc/apt/sources.list.d/system76-dev-ubuntu-stable-focal.list:deb http://ppa.launchpad.net/system76-dev/stable/ubuntu focal main
+/etc/apt/sources.list.d/system76-dev-ubuntu-stable-focal.list:# deb-src http://ppa.launchpad.net/system76-dev/stable/ubuntu focal main
+/etc/apt/sources.list.d/system76-ubuntu-pop-focal.list:deb http://ppa.launchpad.net/system76/pop/ubuntu focal main
+/etc/apt/sources.list.d/system76-ubuntu-pop-focal.list:deb-src http://ppa.launchpad.net/system76/pop/ubuntu focal main
