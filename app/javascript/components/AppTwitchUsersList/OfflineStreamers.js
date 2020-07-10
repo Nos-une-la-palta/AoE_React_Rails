@@ -18,7 +18,7 @@ const OfflineStreamers = ({ twitches, streamers }) => {
         <div className="container-fluid">
             { streamersOffline.map( streamer_offline => 
                 <div key={streamer_offline .id}>
-                    <Row className=" row-image-twitch mb-4 mt-2" onClick={() => setVideo(streamer_offline.attributes.streamer)}>
+                    <Row className=" row-image-twitch pb-2 pt-2" onClick={() => setVideo(streamer_offline.attributes.streamer)}>
                         <Col sm={{span:7}}>
                             <img className="image-twitch-user " src={streamer_offline .attributes.twitch_img} /> 
                             <span className="name-clans-home">{ streamer_offline.attributes.streamer }</span>

@@ -23,7 +23,7 @@ const OnlineStreamers = ({ streamers, twitches }) => {
                 let tw = twitches.find( twitch => twitch.attributes.streamer === streamer.user_name.toLowerCase() ) 
                 return(
                 <div key={streamer.id}>
-                    <Row className=" row-image-twitch mb-4 mt-2"
+                    <Row className=" row-image-twitch pb-2 pt-2"
                          onClick={() => setVideo(streamer.user_name.toLowerCase()) } >
                         <Col sm={{span:7}}>
                             <img className="image-twitch-user " 
