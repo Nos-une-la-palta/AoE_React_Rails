@@ -31,10 +31,14 @@ const AppTwitchUser = ({ twitches }) => {
                 'Authorization': 'Bearer aunv5llxebdg11tkininwi19o0gdhn'
             }
         })
-        .then( resp => 
-            setStreamers(resp.data.data),
+        .then(function(resp){
+            setStreamers(resp.data.data)
             //, setLoaded(true)
-             )
+            return resp
+        })
+        .then(function(resp){
+            setVideo(resp.data.data[0].user_name)
+        })
         .catch( resp => console.log(resp) )
         
     }, [])
