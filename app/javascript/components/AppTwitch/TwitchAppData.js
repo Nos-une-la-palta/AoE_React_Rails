@@ -9,7 +9,7 @@ const TwitchAppData = ({ twitches }) => {
                 { twitches.map( twitch =>  
                     <div key={twitch.id} >
                         <Card className="home-card-bodies">
-                            <Row className=" row-image-twitch mb-4 mt-2 mx-auto">
+                            <Row className="mb-4 mt-2 mx-auto">
                             <img className="image-twitch-index" src={twitch.attributes.twitch_img} alt={twitch.attributes.slug}/>	        
                             </Row>
                             <div className="twitch-name-profile"> 

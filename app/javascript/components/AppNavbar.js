@@ -22,7 +22,7 @@ class AppNavbar extends Component {
         return (
             <Router>
             <div>
-                <Navbar className="navfull" data-toggle="collapse" >
+                <Navbar className="navfull" data-toggle="collapse" sticky="top" >
                     <Nav className="mx-auto">
                         <NavLink to="/" onClick={this.handleOnClickHome} className="link-navbar" >Home</NavLink>
                         <NavLink to="/news" onClick={this.handleOnClickNews} className="link-navbar" >Noticias</NavLink>

@@ -37,8 +37,9 @@
 
   .player-name-style {
     color: #888;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 700;
+    letter-spacing: -0.2;
   }
 
   .player-ranking-style-data {

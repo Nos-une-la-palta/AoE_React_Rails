@@ -16,7 +16,7 @@ class AppFooterFinal extends Component {
                             <h5> REDES SOCIALES</h5>
                             <ul className="list-unstyled list-inline">
                                 <li className="list-inline-item"><a href="https://www.facebook.com/AgeOfEmpiresChile/"><i className="fab fa-facebook-square"></i></a></li>
-                                <li className="list-inline-item"><a href="https://www.twitch.tv/chileaoe"><i className="fab fa-twitch"></i></a></li>
+                                <li className="list-inline-item"><a href="https://www.twitch.tv/chileaoe"><i className=" twitch-icon-footer fab fa-twitch"></i></a></li>
                             </ul>
                         </Col>
                         

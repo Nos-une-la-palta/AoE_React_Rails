@@ -19,9 +19,9 @@ class AppTwitch extends Component {
             <div>
                 <Card className="home-cards">
                     <Card.Header className="home-card-headers">
-                        <i className="fab fa-twitch"></i> Twitch
+                        <i className="fab fa-twitch icon-twitch-header-home"></i> Twitch
                     </Card.Header>
-                    <Card className="home-card-ranking">
+                    <Card className="home-card-ranking twitch-home-scroll-box">
                         <Row className=" mt-2 mb-3">
                             <TwitchAppData twitches={twitches}/>
                         </Row>
