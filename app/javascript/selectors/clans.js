@@ -1,0 +1,1 @@
+export const getClans = state => state.clans;

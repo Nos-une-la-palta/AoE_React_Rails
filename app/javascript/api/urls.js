@@ -11,3 +11,5 @@ export const urlNewsIndex = '/api/v1/news.json';
 
 export const urlTwitchIndex = '/api/v1/twitches.json';
 
+export const urlClanIndex = ' /api/v1/clans.json'
+

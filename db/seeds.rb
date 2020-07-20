@@ -93,3 +93,23 @@ Twitch.create([
     twitch_img: "https://i.ibb.co/jhzN35n/Inicio.png"
   },
 ])
+
+
+Clan.create([
+  { 
+    name: "Clan Marichiweu",
+    image: "https://open-flights.s3.amazonaws.com/United-Airlines.png"
+  }, 
+  { 
+    name: "Clan CHI",
+    image: "https://open-flights.s3.amazonaws.com/Southwest-Airlines.png"
+  },
+  { 
+    name: "Clan CL",
+    image: "https://open-flights.s3.amazonaws.com/Delta.png" 
+  }, 
+  { 
+    name: "Clan Porro",
+    image: "https://open-flights.s3.amazonaws.com/Alaska-Airlines.png" 
+  }
+])

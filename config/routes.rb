@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :news, param: :slug
       resources :twitches, param: :slug
       resources :reviews, only: [:create, :destroy]
+      resources :clans, param: :slug 
     end
   end  
   #now react-router has control over routes
