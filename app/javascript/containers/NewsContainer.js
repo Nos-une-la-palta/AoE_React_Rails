@@ -8,15 +8,15 @@ class NewsContainer extends Component {
     render() {
         return (
             <div>
-            <AppFrame body={
-              <Container fluid>
-                <Row className="mt-5">
-                  <Col xs={{span: 6, offset: 3,}}>
-                  <AppNews/>
-                  </Col>
-                </Row>
-              </Container>
-            }/>
+              <AppFrame body={
+                <Container fluid>
+                  <Row className="mt-5">
+                    <Col xs={{span: 6, offset: 3,}}>
+                      <AppNews/>
+                    </Col>
+                  </Row>
+                </Container>
+              }/>
           </div>
         );
     }
