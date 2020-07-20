@@ -25,11 +25,11 @@ const OnlineStreamers = ({ streamers, twitches }) => {
                 <div key={streamer.id}>
                     <Row className=" row-image-twitch pb-2 pt-2"
                          onClick={() => setVideo(streamer.user_name.toLowerCase()) } >
-                        <Col sm={{span:7}}>
+                        <Col sm={{ offset:1, span:7}}>
                             <img className="image-twitch-user " 
                                 src={ twitches.find( twitch => twitch.attributes.streamer === streamer.user_name.toLowerCase() ) ?
                                     tw.attributes.twitch_img : ""}/> 
-                            <span className="name-clans-home">{ streamer.user_name }</span>
+                            <span className="twitch-user-name">{ streamer.user_name }</span>
                         </Col>
                         <Col sm={4} className="my-auto">
                             <span className="green-dot"></span> 
