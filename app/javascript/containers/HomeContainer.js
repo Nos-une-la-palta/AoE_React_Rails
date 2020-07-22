@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import AppFrame from '../components/AppFrame';
 import { Container, Row, Col } from 'react-bootstrap';
-import AppTwitch from '../components/AppTwitch';
 import AppClans from '../components/AppClans';
 import AppNews from '../components/AppNews';
 import AppRanking from '../components/AppRanking';
 import './../../assets/stylesheets/home.css';
+import AppTwitchVideo from '../components/AppTwitchVideo';
+import AppTwitchUsersList from '../components/AppTwitchUsersList';
 
 class HomeContainer extends Component {
   render() {
@@ -22,7 +23,8 @@ class HomeContainer extends Component {
                 <AppNews/>
               </Col>
               <Col lg={3}>
-                <AppTwitch/>
+                <AppTwitchVideo height="300" width="400"/>
+                <AppTwitchUsersList />
               </Col>
             </Row>
           </Container>
