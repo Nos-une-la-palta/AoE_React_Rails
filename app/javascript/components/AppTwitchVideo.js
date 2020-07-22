@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { useGlobalState } from './AppTwitchUsersList/AppTwitchUser'
 import PropTypes from 'prop-types';
 
-const AppTwitchVideo = () => {
+const AppTwitchVideo = ({height, width}) => {
     const [video, setVideo ] = useGlobalState('video')
     
     useEffect(() => {
@@ -13,8 +13,8 @@ const AppTwitchVideo = () => {
             <div>
                 <iframe
                     src={`https://player.twitch.tv/?channel=${video}&parent=localhost`}
-                    height="500"
-                    width="1080"
+                    height={height}
+                    width={width}
                     scrolling="no"
                     frameBorder="0"
                     allowFullScreen={true}

@@ -14,7 +14,7 @@ class TwitchContainer extends Component {
                     <Container fluid>
                         <Row className="mt-5 mb-5">
                             <Col sm={{span:6, offset:2}}>
-                                <AppTwitchVideo/>
+                                <AppTwitchVideo height="500" width="1080"/>
                             </Col>
                             <Col sm={{span:3}}>
                                 <AppTwitchUsersList/>
