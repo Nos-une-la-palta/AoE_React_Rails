@@ -8,12 +8,12 @@ import { insertNews } from './../actions/insertNews'
 
 class NewsNewContainer extends Component {
 
-    handleSubmit = () => {
-
+    handleSubmit = (values) => {
+        this.props.insertNews(values)
     }
 
     handleOnSubmitSuccess = () => {
-        
+        this.props.history.goBack()
     }
 
     handleOnBack = () => {
@@ -27,7 +27,7 @@ class NewsNewContainer extends Component {
                 onSubmit={this.hadleSubmit}
                 onSubmitSuccess={this.handleOnSubmitSuccess}
                 onBack={this.handleOnBack}
-                />
+            />
         )
     }
 
