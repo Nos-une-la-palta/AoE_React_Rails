@@ -1,0 +1,56 @@
+/*Header*/
+.header {
+    background-image: url(./../images/header-desktop-chileaoe.png);
+    width: 100%;
+    height: 20em;
+    background-size: cover;
+    background-position: left;
+  }
+    
+  
+  .btn-warning {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #ffffff !important;
+    text-shadow: 0 0.1rem 0.1rem rgba(0,0,0,0.30);
+    background: radial-gradient(#ffb733, #e69500);
+    box-shadow: 0 0.25rem 0.25rem rgba(0,0,0,0.30), 0 0.5rem 0.5rem rgba(0,0,0,0.35);
+    border-radius: 0.3rem;
+    border: #f69714 solid;
+    border-width: thin;
+  }
+  
+  .dropdown-menu {
+    background: repeating-linear-gradient(
+      45deg,
+      #222,
+      #222 0.3rem,
+      #000 0.3rem,
+      #000 0.6rem
+    ) !important;
+  
+  }
+  
+  .dropdown-item {
+    color: white !important;
+  }
+  
+  .dropdown-item:hover {
+    background-color: black !important;
+    cursor: pointer;
+    border-top:  #E7A70F 1px solid;
+    border-bottom:  #E7A70F 1px solid;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
+  }
+  
+  .dropdown-divider {
+    border: #f69714 solid 0.5px !important;
+  }
+   
+  .header-claim {
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 0.2em 0.1em 0.3em #332f3f;
+  }

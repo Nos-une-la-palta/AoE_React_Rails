@@ -1,0 +1,45 @@
+/*clans*/
+
+.home-card-clans-body{
+  padding-top: 0 !important;
+  background: repeating-linear-gradient(
+    45deg,
+    #222,
+    #222 0.3rem,
+    #000 0.3rem,
+    #000 0.6rem
+  );
+  box-sizing: border-box;
+  border-radius: 0rem;
+  padding-top: 1rem;
+  padding-bottom: 0.3rem;
+  width: 100%;
+}
+    
+.fa-fist-raised {
+  font-size: 1.4rem;
+  padding-right: 0.1rem;
+}
+
+.image-clans-home {
+  border-radius: 100%;
+  width: 3.2em;
+  height: 3.2em;
+  border: 4px solid black;
+}
+  
+.name-clans-home {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.hr-clans-card-home {
+  border-bottom:  #555 solid thin;
+  width: 90%;
+}
+
+.no-padding-right-clans-image {
+  padding: 0 !important;
+}

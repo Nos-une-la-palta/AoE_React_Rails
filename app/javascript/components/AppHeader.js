@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './../../assets/stylesheets/home.css'
+import './../../assets/stylesheets/header.css'
 import { Container, Row, Col, Dropdown, DropdownButton} from 'react-bootstrap';
 
 class AppHeader extends Component {

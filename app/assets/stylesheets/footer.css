@@ -1,0 +1,50 @@
+/*Footer */
+
+.footer-big{
+    background: repeating-linear-gradient(
+      45deg,
+      #222,
+      #222 0.3rem,
+      #000 0.3rem,
+      #000 0.6rem
+    );
+    position: absolute;
+    width: 100%;
+    bottom: 56px;
+  }
+      
+  .footer-small{
+    background-color: black;
+    color: #aaa;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+      
+  .footer-small a{
+    color: #ccc;
+  }
+      
+  .vl {
+    border-left:  #E7A70F solid thin; 
+    height: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+  }
+    
+  .list-unstyled a{
+    color: white;
+  }
+      
+  .fa-facebook-square {
+    font-size: 2rem;
+  }
+  
+  .twitch-icon-footer {
+    font-size: 1.8rem;
+  }
+    
+  .frame-body {
+    margin-bottom: 200px;
+  }

@@ -4,7 +4,7 @@ import axios from 'axios';
 import PropTypes from 'prop-types';
 import {Row, Col } from 'react-bootstrap';
 import { useGlobalState } from './AppTwitchUser'
-import './../../../assets/stylesheets/home.css';
+import './../../../assets/stylesheets/twitch.css';
 
 const OnlineStreamers = ({ streamers, twitches }) => {
     const [video, setVideo] = useGlobalState('video')
@@ -25,7 +25,7 @@ const OnlineStreamers = ({ streamers, twitches }) => {
                 <div key={streamer.id}>
                     <Row className=" row-image-twitch pb-2 pt-2"
                          onClick={() => setVideo(streamer.user_name.toLowerCase()) } >
-                        <Col sm={{ offset:1, span:7}}>
+                        <Col sm={{ span:8}}>
                             <img className="image-twitch-user " 
                                 src={ twitches.find( twitch => twitch.attributes.streamer === streamer.user_name.toLowerCase() ) ?
                                     tw.attributes.twitch_img : ""}/> 
