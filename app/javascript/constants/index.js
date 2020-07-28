@@ -1,6 +1,7 @@
 export const FETCH_PLAYERS = 'FETCH_PLAYERS';
 
 export const FETCH_NEWS = 'FETCH_NEWS';
+export const INSERT_NEWS = 'INSERT_NEWS';
 
 export const FETCH_TWITCHES = 'FETCH_TWITCHES';
 
