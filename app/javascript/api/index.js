@@ -1,5 +1,5 @@
 export const apiGet = (url) => () => fetch(url).then(v => v.json());
-
+    
 export const apiPost = (url, obj) => () =>
     fetch(url, {
         method: 'POST',

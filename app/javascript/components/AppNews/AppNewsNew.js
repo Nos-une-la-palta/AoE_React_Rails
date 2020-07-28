@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 import PropTypes from 'prop-types';
 
-const AppNewsNew = () => {
+class AppNewsNew extends Component {
+    render() {
+        const { handleSubmit, submitting, onBack, pristine, submitSucceeded } = this.props;
         return (
             <div>
-                <h2> edicion </h2>
-                <form action="">
+                <h2> NUEVA NOTICIA </h2>
+                <form onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="title">Titulo</label>
                         <Field name="title" component="input" type="text"></Field>
@@ -16,16 +18,13 @@ const AppNewsNew = () => {
                         <Field name="description" component="input" type="text"></Field>
                     </div>
                     <div>
-                        <button type="submit"></button>
+                        <button type="submit">botton</button>
+                        <button type="button" onClick={onBack}>Cancelar</button>
                     </div>
-
                 </form>
             </div>
         );
+    }
 }
-
-AppNewsNew.propTypes = {
-
-};
 
 export default reduxForm({ form: 'AppNewsNew'})(AppNewsNew);

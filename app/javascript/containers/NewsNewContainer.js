@@ -24,7 +24,7 @@ class NewsNewContainer extends Component {
     renderBody = () => {
         return (
             <AppNewsNew
-                onSubmit={this.hadleSubmit}
+                onSubmit={this.handleSubmit}
                 onSubmitSuccess={this.handleOnSubmitSuccess}
                 onBack={this.handleOnBack}
             />
