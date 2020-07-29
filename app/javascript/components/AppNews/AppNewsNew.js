@@ -6,8 +6,8 @@ class AppNewsNew extends Component {
     render() {
         const { handleSubmit, submitting, onBack, pristine, submitSucceeded } = this.props;
         return (
-            <div>
-                <h2> NUEVA NOTICIA </h2>
+            <div className="news-form">
+                <h2 className="new-news-title"> NUEVA NOTICIA </h2>
                 <form onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="title">Titulo</label>
