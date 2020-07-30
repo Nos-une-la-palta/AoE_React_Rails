@@ -37,7 +37,10 @@ class TwitchNewContainer extends Component {
                 <AppFrame body={
                     <Container fluid>
                         <Row className="mt-5">
-                            <Col xs={{span: 6, offset: 3,}}>
+                            <Col 
+                                xs={{span: 6, offset: 3,}}
+                                className="d-flex justify-content-center"
+                            >
                                 {this.renderBody()}
                             </Col>
                         </Row>

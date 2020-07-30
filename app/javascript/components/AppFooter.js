@@ -7,11 +7,11 @@ class AppFooterFinal extends Component {
         return (
             <div>
                 <Container fluid>
-                    <Row className="footer-big">
+                    <Row className="footer-big d-flex justify-content-center">
                         <Col className="mt-3 text-white"
                             xs={{span: 4, offset: 0}}
                             sm={{span: 3, offset: 1}}
-                            lg={{span: 1, offset: 4}}
+                            lg={{span: 1, offset: 2}}
                         >
                             <h5> REDES SOCIALES</h5>
                             <ul className="list-unstyled list-inline">

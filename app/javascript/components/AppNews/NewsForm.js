@@ -7,7 +7,7 @@ class NewsForm extends Component {
     render() {
         const { handleSubmit, submitting, onBack, pristine, submitSucceeded } = this.props;
         return (
-            <div className="news-form">
+            <div className="form">
                 <h2 className="new-news-title"> NUEVA NOTICIA </h2>
                 <form onSubmit={handleSubmit}>
 
