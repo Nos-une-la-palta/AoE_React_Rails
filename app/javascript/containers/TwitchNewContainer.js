@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import {Container, Row, Col } from "react-bootstrap";
 import AppFrame from '../components/AppFrame';
-import NewsForm from "../components/AppNews/NewsForm"
+import TwitchForm from "../components/AppTwitchUsersList/TwitchForm"
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { insertNews } from './../actions/insertNews'
+import { insertTwitch } from './../actions/insertTwitch'
 
-class NewsNewContainer extends Component {
+class TwitchNewContainer extends Component {
 
     handleSubmit = (values) => {
-        this.props.insertNews(values)
+        this.props.insertTwitch(values)
     }
 
     handleOnSubmitSuccess = () => {
@@ -23,7 +23,7 @@ class NewsNewContainer extends Component {
 
     renderBody = () => {
         return (
-            <NewsForm
+            <TwitchForm
                 onSubmit={this.handleSubmit}
                 onSubmitSuccess={this.handleOnSubmitSuccess}
                 onBack={this.handleOnBack}
@@ -49,4 +49,4 @@ class NewsNewContainer extends Component {
 }
 
 
-export default withRouter(connect(null, { insertNews })(NewsNewContainer));
+export default withRouter(connect(null, { insertTwitch })(TwitchNewContainer));

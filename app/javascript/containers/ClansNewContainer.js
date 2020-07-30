@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import {Container, Row, Col } from "react-bootstrap";
 import AppFrame from '../components/AppFrame';
-import NewsForm from "../components/AppNews/NewsForm"
+import ClanForm from "../components/AppClans/ClanForm"
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { insertNews } from './../actions/insertNews'
+import { insertClans } from './../actions/insertClans'
 
-class NewsNewContainer extends Component {
+class ClansNewContainer extends Component {
 
     handleSubmit = (values) => {
-        this.props.insertNews(values)
+        this.props.insertClans(values)
     }
 
     handleOnSubmitSuccess = () => {
@@ -23,7 +23,7 @@ class NewsNewContainer extends Component {
 
     renderBody = () => {
         return (
-            <NewsForm
+            <ClanForm
                 onSubmit={this.handleSubmit}
                 onSubmitSuccess={this.handleOnSubmitSuccess}
                 onBack={this.handleOnBack}
@@ -49,4 +49,4 @@ class NewsNewContainer extends Component {
 }
 
 
-export default withRouter(connect(null, { insertNews })(NewsNewContainer));
+export default withRouter(connect(null, { insertClans })(ClansNewContainer));

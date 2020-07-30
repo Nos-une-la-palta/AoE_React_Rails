@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 import PropTypes from 'prop-types';
 
-class AppNewsNew extends Component {
+class NewsForm extends Component {
     render() {
         const { handleSubmit, submitting, onBack, pristine, submitSucceeded } = this.props;
         return (
@@ -27,4 +27,4 @@ class AppNewsNew extends Component {
     }
 }
 
-export default reduxForm({ form: 'AppNewsNew'})(AppNewsNew);
+export default reduxForm({ form: 'NewsForm'})(NewsForm);
