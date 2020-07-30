@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 import PropTypes from 'prop-types';
+import { Button, Row, Col} from 'react-bootstrap';
 
 class NewsForm extends Component {
     render() {
@@ -9,17 +10,24 @@ class NewsForm extends Component {
             <div className="news-form">
                 <h2 className="new-news-title"> NUEVA NOTICIA </h2>
                 <form onSubmit={handleSubmit}>
-                    <div>
-                        <label htmlFor="title">Titulo</label>
-                        <Field name="title" component="input" type="text"></Field>
+
+                    <div className="d-flex justify-content-center">
+                        <Field name="title" component="input" type="text" placeholder="Título"></Field>
                     </div>
-                    <div>
-                        <label htmlFor="description">Descricion</label>
-                        <Field name="description" component="input" type="text"></Field>
+
+                    <div className="d-flex justify-content-center">
+                        <Field name="description" component="textarea" type="text" placeholder="Descripción"></Field>
                     </div>
+
                     <div>
-                        <button type="submit">botton</button>
-                        <button type="button" onClick={onBack}>Cancelar</button>
+                        <Row className="mt-3 mb-4">
+                            <Col xs={{span: 2, offset:7}} className="text-right no-padding-bottons-form">
+                                <Button type="submit" variant="warning" size="lg">Crear</Button>
+                            </Col>
+                            <Col xs={{span: 2,}}className="text-right no-padding-bottons-form">
+                                <Button type="button" variant="dark" size="lg" onClick={onBack}>Cancelar</Button>
+                            </Col>
+                        </Row>
                     </div>
                 </form>
             </div>
