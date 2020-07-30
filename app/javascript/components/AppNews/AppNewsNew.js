@@ -21,10 +21,10 @@ class AppNewsNew extends Component {
 
                     <div>
                         <Row className="mt-3 mb-4">
-                            <Col xs={{span: 3, offset:1}}>
+                            <Col xs={{span: 2, offset:7}} className="text-right no-padding-bottons-form">
                                 <Button type="submit" variant="warning" size="lg">Crear</Button>
                             </Col>
-                            <Col xs={{span: 3, offset:4}} className="text-right">
+                            <Col xs={{span: 2,}}className="text-right no-padding-bottons-form">
                                 <Button type="button" variant="dark" size="lg" onClick={onBack}>Cancelar</Button>
                             </Col>
                         </Row>

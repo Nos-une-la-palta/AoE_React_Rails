@@ -107,3 +107,6 @@ input[type=text]:focus {
   border-width: thin;
 }
 
+.no-padding-bottons-form {
+  padding: 0 !important;
+}
