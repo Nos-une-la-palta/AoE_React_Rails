@@ -25,35 +25,42 @@ class AppRanking extends Component {
     }
 
     renderBody = players => (
-        <div className="d-flex flex-row-reverse mb-5">
-            <Card className="home-cards">
-                <Card.Header className="home-card-headers ">
-                   
-                    <i className="fas fa-trophy align-middle"></i>
-                    <span className="ranking-header-title pr-5 align-middle">Ranking</span>  
-    
-                    <BootstrapSwitchButton
-                        checked={this.state.checked}
-                        onChange={this.handleChange}
-                        onlabel='Chile'
-                        offlabel='Mundial'
-                        size="sm"
-                        width={78}
-                        height={23}
-                        onstyle="outline-warning"
-                        offstyle="outline-primary"
-                        className="align-middle"
-                    /> 
-
-                </Card.Header>
-                <Card className="home-card-ranking">
-                    <Row className=" mt-2 mb-3">
-                        <RankingData 
-                            players= {players}
-                        />
-                    </Row>
-                </Card>
-            </Card>
+        <div className="mb-5">
+            <Row>
+                <Col>
+                    <Card className="home-cards">
+                        <Card.Header className="home-card-headers">
+                            <i className="fas fa-trophy align-middle"></i>
+                            <span className="ranking-header-title pr-5 align-middle">Ranking</span>  
+                            <BootstrapSwitchButton
+                                checked={this.state.checked}
+                                onChange={this.handleChange}
+                                onlabel='Chile'
+                                offlabel='Mundial'
+                                size="sm"
+                                width={78}
+                                height={23}
+                                onstyle="outline-warning"
+                                offstyle="outline-primary"
+                                className="align-middle"
+                            /> 
+                        </Card.Header>
+                    </Card>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <Card className="home-cards mt-3 mb-2">
+                        <Card className="home-card-ranking">
+                            <Row className=" mt-2 mb-3">
+                                <RankingData 
+                                    players= {players}
+                                />
+                            </Row>
+                        </Card>
+                    </Card>
+                </Col>
+            </Row>
         </div>
     );
   

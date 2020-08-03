@@ -8,92 +8,88 @@
     );
     box-sizing: border-box;
     border-radius: 0rem;
-   
     width: 100%;
-  }
+ }
   
-  .ranking-hr{
-    border-bottom:  #555 solid thin;
-    width: 90%;
-    margin: 0;
-  }
+.ranking-hr{
+  border-bottom:  #555 solid thin;
+  width: 90%;
+  margin: 0;
+}
 
-  .main-number-rank {
-    color: #ccc;
-    font-size: 1.1rem;
-    font-weight: bold;
-    letter-spacing: -0.15rem;
-    text-align: center;
-    position: relative;
-  }
+.main-number-rank {
+  color: #ccc;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: -0.15rem;
+  text-align: center;
+  position: relative;
+}
 
-  .main-number-rank-bg {
-    background-color: black;
-    border: #E7A70F solid thick;
-    border-radius: 0.8rem;
-    line-height: 2.8rem;
-    text-align: center;
-  }
+.main-number-rank-bg {
+  background-color: black;
+  border: #E7A70F solid thick;
+  border-radius: 0.8rem;
+  line-height: 2.8rem;
+  text-align: center;
+}
 
-  .player-name-style {
-    color: #888;
-    font-size: 1.15rem;
-    font-weight: 700;
-    letter-spacing: -0.2;
-  }
+.player-name-style {
+  color: #888;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.2;
+}
+.player-ranking-style-data {
+  font-size: 0.8rem;
+  color: #ddd;
+}
+.ranking-header-title {
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: 0rem;
+}
+.fa-trophy {
+  font-size: 1.3rem;
+  padding-right: 0.5rem;
+}
 
-  .player-ranking-style-data {
-    font-size: 0.8rem;
-    color: #ddd;
-  }
+/*----------arrow --------*/
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 0.2em;
+  margin: 0em 0.5em;
+}
 
-  .ranking-header-title {
-    font-size: 1.7rem;
-    font-weight: 400;
-    letter-spacing: 0rem;
-  }
-  .fa-trophy {
-    font-size: 1.3rem;
-    padding-right: 0.5rem;
-  }
+.up {
+  border-color: rgb(31, 239, 52);
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
 
-  /*----------arrow --------*/
-  .arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 0.2em;
-    margin: 0em 0.5em;
-  }
-  
-  .up {
-    border-color: rgb(31, 239, 52);
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-  }
-  
-  .down {
-    border-color: rgb(255, 35, 43);
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
-  
+.down {
+  border-color: rgb(255, 35, 43);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 /*----------flag size --------*/
-  .country-flag{
-    font-size: 1.4em;
-  }
+.country-flag{
+  font-size: 1.4em;
+}
 
 /*----------padding off --------*/  
-  .streak-padding-off {
-    padding: 0 !important;
-  }
-  
-  .ww-rank-logo{
-    width: 1.25em;
-    height: 1.25em;
-    margin-right: 0.1em;
-  }
+.streak-padding-off {
+  padding: 0 !important;
+}
 
-  .padding-left-off {
-    padding-left: 0 !important;
-  }
+.ww-rank-logo{
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 0.1em;
+}
+.padding-left-off {
+  padding-left: 0 !important;
+}
