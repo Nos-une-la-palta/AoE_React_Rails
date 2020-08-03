@@ -1,7 +1,7 @@
 /*twitch*/
 
 .twitch-home-scroll-box {
-    max-height: 27em;
+    max-height: 13.2em;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -20,6 +20,9 @@
 }
 
 .twitch-home-scroll-box::-webkit-scrollbar-thumb {
+  visibility: hidden;
+}
+.twitch-home-scroll-box::-webkit-scrollbar-thumb:hover {
   visibility: visible;
   background: #333; 
   border-radius: 1em;
@@ -146,4 +149,30 @@
   border-radius: 50%;
   display: inline-block;
   margin-right: 0.5em;
+}
+
+.twitch-home-video-container {
+  padding-left: 0 !important;
+  padding-right: 20% !important;
+}
+
+.home-card-twitch{
+  background: repeating-linear-gradient(
+    45deg,
+    #222,
+    #222 0.3rem,
+    #000 0.3rem,
+    #000 0.6rem
+  );
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.no-padding-right {
+  padding-right: 0 !important;
+}
+
+.border-twitch-card-home{
+  border-top:orange 1.2px solid !important;
+  border-bottom:orange 1.2px solid !important;
 }
