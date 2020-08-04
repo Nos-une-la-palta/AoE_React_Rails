@@ -16,8 +16,8 @@ class HomeContainer extends Component {
           <Container fluid>
             <Row className="mt-5">
               <Col lg={3}>
-                <AppRanking/>
-                <AppClans/>
+                  <AppRanking/>
+                  <AppClans/>
               </Col>
               <Col lg={6}>
                 <AppNews/>

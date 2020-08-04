@@ -15,7 +15,7 @@ class AppClans extends Component {
 
     renderBody = clans => {
         return (
-            <div>
+            <div className="d-flex align-items-end flex-column">
                  <Card className="home-cards">
                     <Card.Header className="home-card-headers">
                     <i className="fas fa-fist-raised"></i> Clanes Asociados
