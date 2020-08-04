@@ -26,7 +26,7 @@ class AppTwitch extends Component {
                 <Container fluid className="twitch-home-video-container mt-3 mb-2">
                     <AppTwitchVideo height="220" width="340" className="video"/>  
                 </Container>
-                <Card className="home-cards border-twitch-card-home">
+                <Card className="home-cards border-card-home">
                     <Card className="home-card-twitch twitch-home-scroll-box">
                         <Container fluid className="mt-1 mb-1 no-padding-right">
                             <AppTwitchUser twitches={twitches}/>

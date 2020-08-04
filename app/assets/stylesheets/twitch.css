@@ -82,8 +82,6 @@
  );
  box-sizing: border-box;
  border-radius: 0rem;
- padding-top: 1rem;
- padding-bottom: 0.3rem;
  width: 100%;
 }
   
@@ -111,7 +109,7 @@
 }
 
 .scroll-box {
-  max-height: 27em;
+  max-height: 26em;
   overflow-y: scroll;
 }
   
@@ -172,7 +170,3 @@
   padding-right: 0 !important;
 }
 
-.border-twitch-card-home{
-  border-top:orange 1.2px solid !important;
-  border-bottom:orange 1.2px solid !important;
-}

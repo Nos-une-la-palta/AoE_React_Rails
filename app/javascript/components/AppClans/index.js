@@ -15,11 +15,13 @@ class AppClans extends Component {
 
     renderBody = clans => {
         return (
-            <div className="d-flex flex-row-reverse">
+            <div>
                  <Card className="home-cards">
                     <Card.Header className="home-card-headers">
                     <i className="fas fa-fist-raised"></i> Clanes Asociados
                     </Card.Header>
+                </Card>
+                <Card className="home-cards mt-3 border-card-home">
                     <Card className="home-card-clans-body">
                         <Row>
                             <ClanData clans={clans}/>

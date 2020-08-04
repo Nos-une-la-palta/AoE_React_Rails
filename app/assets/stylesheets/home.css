@@ -26,7 +26,6 @@ html {
 .home-cards{
   color: #CCCCCC;
   background-color: black !important;
-  border-width: thin;
   box-shadow: 0.05rem 0.2rem 0.3rem 0.05rem #000000;
   box-sizing: border-box;
   width: 80%;
@@ -50,7 +49,6 @@ html {
     #000 0.6rem
   );
   box-sizing: border-box;
-  border-radius: 0rem;
   padding-top: 1rem;
   padding-bottom: 0.3rem;
   align-items: center;
@@ -62,6 +60,9 @@ a, a:hover, a:focus, a:active {
   color: inherit;
 }
   
-
+.border-card-home{
+  border-top:orange 1.2px solid !important;
+  border-bottom:orange 1.2px solid !important;
+}
 
   

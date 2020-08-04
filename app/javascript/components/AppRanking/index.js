@@ -50,7 +50,7 @@ class AppRanking extends Component {
             </Row>
             <Row>
                 <Col>
-                    <Card className="home-cards mt-3 mb-2">
+                    <Card className="home-cards mt-3 border-card-home">
                         <Card className="home-card-ranking">
                             <Row className=" mt-2 mb-3">
                                 <RankingData 
@@ -60,6 +60,7 @@ class AppRanking extends Component {
                         </Card>
                     </Card>
                 </Col>
+
             </Row>
         </div>
     );

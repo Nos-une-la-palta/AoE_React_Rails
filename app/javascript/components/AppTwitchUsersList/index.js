@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchTwitches } from './../../actions/fetchTwitches';
 import { getTwitches } from './../../selectors/twitches';
-import { Card } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import AppTwitchUser from './AppTwitchUser';
 import './../../../assets/stylesheets/home.css';
 
@@ -20,8 +20,12 @@ class AppTwitchUsersList extends Component {
                     <Card.Header className="home-card-headers">
                     <i className="fas fa-headset"></i> Streamers
                     </Card.Header>
-                    <Card className="twitch-card-body scroll-box">
-                        <AppTwitchUser twitches={twitches}/>
+                </Card>
+                <Card className="home-cards border-card-home mt-3">
+                    <Card className="home-card-twitch scroll-box">
+                        <Container fluid className="mt-1 mb-1 no-padding-right">
+                            <AppTwitchUser twitches={twitches}/>
+                        </Container>
                     </Card>
                 </Card>
             </div>

@@ -15,7 +15,7 @@ class HomeContainer extends Component {
         <AppFrame body={
           <Container fluid>
             <Row className="mt-5">
-              <Col lg={3} >
+              <Col lg={3}>
                 <AppRanking/>
                 <AppClans/>
               </Col>
